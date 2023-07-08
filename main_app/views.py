@@ -25,7 +25,7 @@ class CraftList(TemplateView):
             context["header"] = f"Searching for {type}"
         else:
            context["crafts"] = Craft.objects.all()
-           context["header"] = "My Favorite Craftsy-Arts"
+        #    context["header"] = "My Favorite Crafty-Arts"
         return context
     
 class CraftCreate(CreateView):
