@@ -1,4 +1,54 @@
 {% extends 'base.html' %}
 {% block content %}
-        <h1>Home</h1>
+<title>Art Craft Home Page</title>
+<style>
+  /* Add some basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  main {
+    margin: 30px;
+  }
+
+  h1 {
+    color: #b5aecc;
+    text-align: center;
+  }
+
+  p {
+    color: #b5aecc;
+    text-align: center;
+  }
+
+  #featured-art {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+</style>
+
+        <h1>Welcome to My Art & Craft Interest Page</h1>
+        <p>Explore and discover amazing world renown artworks and crafts!</p>
+ 
+      <main>
+        <h2>Featured Artwork</h2>
+        <button> Click here to explore more</button>
+        <p>Mona Lisa by Leonardo-da-Vinci</p>
+        <div id="featured-art">
+          <img src="https://ipaintings.com/images/leonardo-da-vinci-paintings-the-mona-lisa/38802/600x600/the-mona-lisa-lf1032.jpg" alt="">
+        </div>
+      </main>h
+    
+
 {% endblock %}

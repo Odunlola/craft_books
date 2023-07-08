@@ -5,14 +5,13 @@
 <form class="mb-5" method="get">
   <div class="field has-addons">
     <div class="control">
-      <!--  Our input will search by name of craft  -->
-      <input class="input" type="text" type="type" placeholder="name" />
+      <input class="input" type="text" type="type" placeholder="" />
     </div>
     <div class="control">
       <input class="button is-success" type="submit" value="Search" />
     </div>
   </div>
-  <!--  This anchor tag will redirect back to craft list without a query param -->
+  
   <a class="button is-dark" href="{% url 'craft_list' %}">Clear Search</a>
   <a class="button is-dark" href="{% url 'craft_create' %}">Add Craft</a>
 </form>
