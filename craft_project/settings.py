@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main_app',
-    'corsheaders',
 ]
 
 # # CORS Settings
@@ -96,10 +95,9 @@ WSGI_APPLICATION = 'craft_project.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600,
-    )
+        conn_health_checks=True
+    ),
 }
 
 # Password validation
